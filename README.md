@@ -49,12 +49,18 @@
 //	//calloc은 malloc이랑 똑같은데 인자 크기가 다르다.
 //	int * ptr = (int*)calloc(10, sizeof(int));
 //	//ptr은 이미 할당되있는 주소를 쓴다.
+	
+	
+	
 //	//다시 메모리를 크기변경하는 realloc 
 //
 //	//이전에 할당된 메모리 크기를 변경하는 함수
 //	ptr = (int*)realloc(ptr, sizeof(int) * 2);
 //	//calloc이 10개를 받은 것을 realloc이 2개로 바꾼다.
 //	//calloc한테 부족한 주소를 더 쓰게 할 수 있음.
+	
+	//realloc은 동정할당해제를 한번 더 안해도 된다.
+	//malloc을 쓴 만큼 할당해제를 하면 된다.
 //	
 //	free(ptr);
 //	//해제
